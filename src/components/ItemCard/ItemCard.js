@@ -4,7 +4,6 @@ import Style from "./ItemCard.module.css";
 const ItemCard = (data) => {
   const { id, item, handleOpen, flippedCards } = data;
   const isFlipped = flippedCards.find((item) => item.item.id == id);
-  console.log(isFlipped);
   return (
     <div
       className={`${Style.card} ${
